@@ -2,7 +2,7 @@
   "name": "reactwork-1",
   "version": "1.0.0",
   "description": "New React project",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "start": "parcel index.html",
@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/2jyo7/React-project-B#readme",
   "devDependencies": {
-    "parcel": "^2.9.3"
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.2.0",
