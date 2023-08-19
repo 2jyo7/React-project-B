@@ -29,17 +29,17 @@ const Body = () => {
     <div className="col">
       <div className="card mb-4 rounded-3 shadow-sm">
         <div className="card-header py-3">
-          <h4 className="my-0 fw-normal">Temperature - {Data?.temp_c} </h4>
+          <h4 className="my-0 fw-normal">Temperature(celcius) - {Data?.temp_c} </h4>
         </div>
         <div className="card-body">
           <h1 className="card-title pricing-card-title">
             <small className="text-body-secondary fw-light"></small>
           </h1>
           <ul className="list-unstyled mt-3 mb-4">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Temperature(celsius) is <span id="temp">{Data?.temp_c}</span></li>
+            <li>Feelslike is <span id="feels">{Data?.feelslike_f}</span></li>
+            <li>Precipitation is <span id="precip">{Data?.precip_in}</span></li>
+            <li>Wind-direction is <span id="wind">{Data?.wind_dir}</span></li>
           </ul>
           <button
             type="button"
@@ -52,17 +52,17 @@ const Body = () => {
     <div className="col">
       <div className="card mb-4 rounded-3 shadow-sm">
         <div className="card-header py-3">
-          <h4 className="my-0 fw-normal">Pressure - {Data?.pressure_mb}</h4>
+          <h4 className="my-0 fw-normal">Pressure(mb) - {Data?.pressure_mb}</h4>
         </div>
         <div className="card-body">
           <h1 className="card-title pricing-card-title">
             <small className="text-body-secondary fw-light"></small>
           </h1>
           <ul className="list-unstyled mt-3 mb-4">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <li>Temperature(Fahrenheit) is <span id="temp">{Data?.temp_f}</span></li>
+            <li>Feelslike is <span id="feels">{Data?.feelslike_c}</span></li>
+            <li>Visibility(KM) is <span id="vis">{Data?.vis_km}</span></li>
+            <li>Wind speed is <span id="wind">{Data?.wind_mph}</span></li>
           </ul>
           <button type="button" className="w-100 btn btn-lg btn-primary">
           </button>
@@ -79,10 +79,10 @@ const Body = () => {
             <small className="text-body-secondary fw-light"></small>
           </h1>
           <ul className="list-unstyled mt-3 mb-4">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <li>Temperature is <span id="temp">{Data?.temp_f}</span></li>
+            <li>UV is <span id="feels">{Data?.uv}</span></li>
+            <li>Visibility(miles) is <span id="vis">{Data?.vis_miles}</span></li>
+            <li>Wind degree is <span id="wind">{Data?.wind_degree}</span></li>
           </ul>
           <button type="button" className="w-100 btn btn-lg btn-primary">
           </button>
